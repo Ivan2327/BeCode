@@ -1,0 +1,37 @@
+.specialists {
+  margin: 60px 0 70px 0;
+
+  &__title {
+    margin-bottom: 50px;
+    font-family: var(--font-family);
+    font-weight: 300;
+    font-size: 48px;
+    color: #58595b;
+  }
+
+  &__card img {
+    aspect-ratio: 254/324;
+    margin-bottom: 16px;
+  }
+
+  &__cardName {
+    margin-bottom: 8px;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 130%;
+    color: #ff802a;
+
+    span {
+      font-weight: 700;
+    }
+  }
+
+  &__cardDesc {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 150%;
+    color: #58595b;
+  }
+}

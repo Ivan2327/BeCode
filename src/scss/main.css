@@ -444,4 +444,26 @@ a {
 }
 .services__card--6 img {
   aspect-ratio: 364/227;
+}
+
+.promotions {
+  margin: 80px 0;
+}
+.promotions__tabs {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+.promotions__tab {
+  flex: 1;
+  min-width: 60px;
+  height: 6px;
+  background: #e0e0e0;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.promotions__tab.active {
+  background: #2d8cff;
 }/*# sourceMappingURL=main.css.map */

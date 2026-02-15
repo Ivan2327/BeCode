@@ -184,3 +184,27 @@
     aspect-ratio: 364/227;
   }
 }
+
+.swiper__tabs {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 50px;
+  flex-wrap: wrap;
+}
+
+.swiper-tab {
+  flex: 1;
+  min-width: 50px;
+  max-width: 74px;
+  height: 4px;
+  border-radius: 20px;
+  background-color: #e5e0e0;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.swiper-tab {
+  &.active {
+    background-color: #f63;
+  }
+}

@@ -1,0 +1,42 @@
+.promotions {
+  margin: 80px 0;
+
+  &__title {
+    margin-bottom: 55px;
+    font-family: var(--font-family);
+    font-weight: 300;
+    font-size: 48px;
+    color: #58595b;
+  }
+
+  &__card {
+    aspect-ratio: 559/352;
+    border-radius: 24px;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 35px 30px 30px 30px;
+  }
+
+  &__cardTitle {
+    margin-bottom: 20px;
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 140%;
+    color: #ff802a;
+
+    span {
+      font-size: 60px;
+    }
+  }
+
+  &__cardSubtitle {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 140%;
+    color: #58595b;
+    max-width: 280px;
+  }
+}
