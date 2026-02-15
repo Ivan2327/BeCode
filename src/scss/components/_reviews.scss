@@ -1,0 +1,118 @@
+.reviews {
+  margin: 70px 0;
+
+  &__title {
+    margin-bottom: 50px;
+    font-family: var(--font-family);
+    font-weight: 300;
+    font-size: 48px;
+    color: #58595b;
+  }
+
+  &__tabs {
+    margin-bottom: 50px;
+  }
+
+  &__card {
+    border-radius: 24px;
+    padding: 40px 30px;
+    background-color: #f3f3f3;
+  }
+
+  &__cardFlex {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  &__cardLeft {
+    margin-bottom: 20px;
+    h4 {
+      margin-bottom: 10px;
+      font-family: var(--font-family);
+      font-weight: 600;
+      font-size: 16px;
+      line-height: 150%;
+      color: #58595b;
+    }
+  }
+
+  &__stars {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+  }
+
+  &__date {
+    font-family: var(--second-family);
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 160%;
+    text-align: right;
+    color: #9e9e9e;
+  }
+
+  &__content {
+    margin-bottom: 20px;
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 140%;
+    color: #58595b;
+  }
+
+  &__specialists {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+  }
+
+  &__specCard {
+    img {
+      margin-bottom: 5px;
+      width: 83px;
+      height: 80px;
+      border-radius: 100%;
+    }
+  }
+
+  &__specName {
+    font-family: var(--font-family);
+    font-style: italic;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 140%;
+    color: #58595b;
+  }
+
+  &__link {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    color: #58595b;
+  }
+
+  &__swiper {
+    margin-bottom: 32px;
+  }
+
+  &__allLink {
+    display: block;
+    max-width: 220px;
+    border: 1px solid #f63;
+    border-radius: 28px;
+    padding: 14px 20px;
+    text-align: center;
+    background-color: #fff;
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 16px;
+    color: #f63;
+    transition: 0.3s all ease;
+  }
+}

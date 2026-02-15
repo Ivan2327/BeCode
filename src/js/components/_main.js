@@ -42,8 +42,7 @@ function recreateTabs(swiper, tabsContainer) {
 
 const specialistsTabs = document.querySelector(".specialists__tabs");
 const promotionsTabs = document.querySelector(".promotions__tabs");
-console.log(promotionsTabs);
-console.log(specialistsTabs);
+const reviewsTabs = document.querySelector(".reviews__tabs");
 
 const specialistsSwiper = new Swiper(".specialists__swiper", {
   slidesPerView: 4,
@@ -85,6 +84,28 @@ const promotionSwiper = new Swiper(".promotions__swiper", {
     },
     breakpoint: function () {
       recreateTabs(this, promotionsTabs);
+    },
+  },
+});
+
+const reviewsSwiper = new Swiper(".reviews__swiper", {
+  slidesPerView: 2,
+  slidesPerGroup: 2,
+  spaceBetween: 20,
+  speed: 600,
+  breakpoints: {
+    0: { slidesPerView: 1, slidesPerGroup: 1 },
+    768: { slidesPerView: 2, slidesPerGroup: 2 },
+  },
+  on: {
+    init: function () {
+      createTabs(this, reviewsTabs);
+    },
+    slideChange: function () {
+      updateTabs(this, reviewsTabs);
+    },
+    breakpoint: function () {
+      recreateTabs(this, reviewsTabs);
     },
   },
 });
