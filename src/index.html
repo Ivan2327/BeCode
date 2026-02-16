@@ -232,6 +232,9 @@
             </div>
             <div class="about__bottom">
               <div class="about__video">
+                <button class="about__videoPlay btn-reset">
+                  <img src="img/play-btn.png" alt="" />
+                </button>
                 <img src="img/about-video.png" alt="" />
               </div>
               <div class="about__list">
@@ -391,6 +394,88 @@
           </div>
         </section>
         @include('partials/specialists.html') @include('partials/reviews.html')
+        <section class="slogan">
+          <div class="container">
+            <div
+              class="slogan__wrap"
+              style="background-image: url(&quot;img/slogan-fon.png&quot;)"
+            >
+              <h2 class="slogan__title">
+                На первый визит в клинику <span>скидка!</span>
+              </h2>
+              <button class="slogan__btn btn-reset">Запишитесь онлай</button>
+            </div>
+          </div>
+        </section>
+        <section class="results">
+          <div class="container">
+            <h2 class="results__title">Наши результаты</h2>
+            <p class="results__subtitle">
+              Мы ориентируемся на естественную эстетику, безопасность и
+              предсказуемый эффект, обеспечивая заметные улучшения внешности и
+              качества жизни.
+            </p>
+            <div class="results__border"></div>
+            <div class="results__cards">
+              <div class="results__card">
+                <h3 class="results__cardTitle">Блефаропластика</h3>
+                <div class="results__cardImages">
+                  <div class="results__cardImage">
+                    <p class="results__cardImageP">до</p>
+                    <img src="img/results/1.png" alt="" />
+                  </div>
+                  <div class="results__cardImage">
+                    <p class="results__cardImageP">после</p>
+                    <img src="img/results/2.png" alt="" />
+                  </div>
+                </div>
+              </div>
+              <div class="results__card">
+                <h3 class="results__cardTitle">Блефаропластика</h3>
+                <div class="results__cardImages">
+                  <div class="results__cardImage">
+                    <p class="results__cardImageP">до</p>
+                    <img src="img/results/3.png" alt="" />
+                  </div>
+                  <div class="results__cardImage">
+                    <p class="results__cardImageP">после</p>
+                    <img src="img/results/4.png" alt="" />
+                  </div>
+                </div>
+              </div>
+              <div class="results__card">
+                <h3 class="results__cardTitle">Отопластика</h3>
+                <div class="results__cardImages">
+                  <div class="results__cardImage">
+                    <p class="results__cardImageP">до</p>
+                    <img src="img/results/5.png" alt="" />
+                  </div>
+                  <div class="results__cardImage">
+                    <p class="results__cardImageP">после</p>
+                    <img src="img/results/6.png" alt="" />
+                  </div>
+                </div>
+              </div>
+              <div class="results__card">
+                <h3 class="results__cardTitle">Ринопластика</h3>
+                <div class="results__cardImages">
+                  <div class="results__cardImage">
+                    <p class="results__cardImageP">до</p>
+                    <img src="img/results/7.png" alt="" />
+                  </div>
+                  <div class="results__cardImage">
+                    <p class="results__cardImageP">после</p>
+                    <img src="img/results/8.png" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a href="#" class="results__all">Все результаты</a>
+          </div>
+        </section>
+        @include('partials/news.html')
+        <div class="container"><hr class="main__hr" /></div>
+        @include('partials/form.html')
       </main>
 
       @include('partials/footer.html')
