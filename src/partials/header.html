@@ -18,20 +18,29 @@
         </div>
         <div class="header__topRight">
           <div class="header__search">
-            <svg
-              width="17"
-              height="17"
-              viewBox="0 0 17 17"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M6.92578 0.5C8.60116 0.480869 10.2193 1.1098 11.4424 2.25488C12.6655 3.40003 13.3991 4.97349 13.4902 6.64648C13.5656 8.03148 13.1961 9.39683 12.4473 10.5469C12.0553 11.1489 12.0484 12.0052 12.6123 12.5693L15.6465 15.6055C15.6854 15.6444 15.6854 15.7072 15.6465 15.7461C15.6075 15.7848 15.5447 15.785 15.5059 15.7461L12.4492 12.6895C11.8935 12.1339 11.0515 12.1316 10.4512 12.5078C9.28327 13.2396 7.90551 13.5859 6.5166 13.4824C4.84573 13.3578 3.28743 12.5925 2.16699 11.3467C1.04659 10.1009 0.450322 8.47054 0.50293 6.7959C0.555655 5.12116 1.25362 3.53131 2.4502 2.3584C3.64686 1.18548 5.25026 0.519165 6.92578 0.5ZM7 0.699219C5.32934 0.699321 3.72727 1.36362 2.5459 2.54492C1.36442 3.7264 0.700195 5.32914 0.700195 7C0.700279 8.67073 1.36452 10.2727 2.5459 11.4541C3.72729 12.6355 5.32928 13.2997 7 13.2998C8.67086 13.2998 10.2736 12.6356 11.4551 11.4541C12.6364 10.2727 13.3007 8.67069 13.3008 7C13.3008 5.32914 12.6366 3.7264 11.4551 2.54492C10.2736 1.36346 8.67085 0.699219 7 0.699219Z"
-                fill="#58595B"
-                stroke="#FB7444"
-              />
-            </svg>
+            <input
+              type="text"
+              class="header__searchInp"
+              placeholder="Поиск..."
+            />
+
+            <button type="button" class="header__searchBtn btn-reset">
+              <svg
+                width="17"
+                height="17"
+                viewBox="0 0 17 17"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M6.92578 0.5C8.60116 0.480869 10.2193 1.1098 11.4424 2.25488C12.6655 3.40003 13.3991 4.97349 13.4902 6.64648C13.5656 8.03148 13.1961 9.39683 12.4473 10.5469C12.0553 11.1489 12.0484 12.0052 12.6123 12.5693L15.6465 15.6055C15.6854 15.6444 15.6854 15.7072 15.6465 15.7461C15.6075 15.7848 15.5447 15.785 15.5059 15.7461L12.4492 12.6895C11.8935 12.1339 11.0515 12.1316 10.4512 12.5078C9.28327 13.2396 7.90551 13.5859 6.5166 13.4824C4.84573 13.3578 3.28743 12.5925 2.16699 11.3467C1.04659 10.1009 0.450322 8.47054 0.50293 6.7959C0.555655 5.12116 1.25362 3.53131 2.4502 2.3584C3.64686 1.18548 5.25026 0.519165 6.92578 0.5ZM7 0.699219C5.32934 0.699321 3.72727 1.36362 2.5459 2.54492C1.36442 3.7264 0.700195 5.32914 0.700195 7C0.700279 8.67073 1.36452 10.2727 2.5459 11.4541C3.72729 12.6355 5.32928 13.2997 7 13.2998C8.67086 13.2998 10.2736 12.6356 11.4551 11.4541C12.6364 10.2727 13.3007 8.67069 13.3008 7C13.3008 5.32914 12.6366 3.7264 11.4551 2.54492C10.2736 1.36346 8.67085 0.699219 7 0.699219Z"
+                  fill="#58595B"
+                  stroke="#FB7444"
+                />
+              </svg>
+            </button>
           </div>
+
           <div class="header__phone">
             <img src="img/icons/phone.svg" alt="" />
             <a href="tel:+7 (495) 292-73-93">+7 (495) 292-73-93</a>
@@ -49,8 +58,8 @@
         </a>
         <nav class="header__nav">
           <ul class="header__menu">
-            <li class="header__menuLi header__menuSub">
-              <a href="#">О клинике</a>
+            <li class="header__menuLi header__menuSub" data-li="1">
+              <p>О клинике</p>
               <svg
                 class="header__menuLiSvg"
                 width="9"
@@ -66,7 +75,23 @@
                 ></path>
               </svg>
             </li>
-            <li><a href="#">Услуги</a></li>
+            <li class="header__menuLi header__menuSub" data-li="2">
+              <p>Услуги</p>
+              <svg
+                class="header__menuLiSvg"
+                width="9"
+                height="7"
+                viewBox="0 0 9 7"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M0.5 0.5L4.5 5.5L8.5 0.500001"
+                  stroke="#303030"
+                  stroke-linecap="round"
+                ></path>
+              </svg>
+            </li>
             <li><a href="#">Цены</a></li>
             <li><a href="#">Специалисты</a></li>
             <li><a href="#">Технологии</a></li>
@@ -76,6 +101,204 @@
           </ul>
         </nav>
       </div>
+    </div>
+  </div>
+  <div class="header__subMenuCont" data-sub="1">
+    <svg
+      class="header__subMenu--close"
+      width="27"
+      height="27"
+      viewBox="0 0 27 27"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M1.475 26.2833L0 24.8083L11.6667 13.1417L0 1.475L1.475 0L13.1417 11.6667L24.8083 0L26.2833 1.475L14.6167 13.1417L26.2833 24.8083L24.8083 26.2833L13.1417 14.6167L1.475 26.2833Z"
+        fill="#919294"
+      />
+    </svg>
+    <div class="container">
+      <nav class="subMenu">
+        <div class="subMenu__column">
+          <h3 class="subMenu__title">Пластическая хирургия</h3>
+
+          <div class="subMenu__group">
+            <h4 class="subMenu__subtitle">Пластика лица</h4>
+            <ul class="subMenu__list">
+              <li><a href="#">Блефаропластика</a></li>
+              <li><a href="#">Подтяжка лба</a></li>
+              <li><a href="#">Подтяжка лица</a></li>
+            </ul>
+          </div>
+
+          <div class="subMenu__group">
+            <h4 class="subMenu__subtitle">Пластика тела</h4>
+            <ul class="subMenu__list">
+              <li><a href="#">Липосакция</a></li>
+              <li><a href="#">Маммопластика</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="subMenu__column">
+          <h3 class="subMenu__title">Пластическая хирургия</h3>
+
+          <div class="subMenu__group">
+            <h4 class="subMenu__subtitle">Пластика лица</h4>
+            <ul class="subMenu__list">
+              <li><a href="#">Блефаропластика</a></li>
+              <li><a href="#">Подтяжка лба</a></li>
+              <li><a href="#">Подтяжка лица</a></li>
+            </ul>
+          </div>
+
+          <div class="subMenu__group">
+            <h4 class="subMenu__subtitle">Пластика тела</h4>
+            <ul class="subMenu__list">
+              <li><a href="#">Липосакция</a></li>
+              <li><a href="#">Маммопластика</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="subMenu__column">
+          <h3 class="subMenu__title">Пластическая хирургия</h3>
+
+          <div class="subMenu__group">
+            <h4 class="subMenu__subtitle">Пластика лица</h4>
+            <ul class="subMenu__list">
+              <li><a href="#">Блефаропластика</a></li>
+              <li><a href="#">Подтяжка лба</a></li>
+              <li><a href="#">Подтяжка лица</a></li>
+            </ul>
+          </div>
+
+          <div class="subMenu__group">
+            <h4 class="subMenu__subtitle">Пластика тела</h4>
+            <ul class="subMenu__list">
+              <li><a href="#">Липосакция</a></li>
+              <li><a href="#">Маммопластика</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="subMenu__column">
+          <h3 class="subMenu__title active">Пластическая хирургия</h3>
+
+          <div class="subMenu__group">
+            <h4 class="subMenu__subtitle active">Пластика лица</h4>
+            <ul class="subMenu__list">
+              <li class="active"><a href="#">Блефаропластика</a></li>
+              <li><a href="#">Подтяжка лба</a></li>
+              <li><a href="#">Подтяжка лица</a></li>
+            </ul>
+          </div>
+
+          <div class="subMenu__group">
+            <h4 class="subMenu__subtitle">Пластика тела</h4>
+            <ul class="subMenu__list">
+              <li><a href="#">Липосакция</a></li>
+              <li><a href="#">Маммопластика</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </div>
+  <div class="header__subMenuCont" data-sub="2">
+    <svg
+      class="header__subMenu--close"
+      width="27"
+      height="27"
+      viewBox="0 0 27 27"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M1.475 26.2833L0 24.8083L11.6667 13.1417L0 1.475L1.475 0L13.1417 11.6667L24.8083 0L26.2833 1.475L14.6167 13.1417L26.2833 24.8083L24.8083 26.2833L13.1417 14.6167L1.475 26.2833Z"
+        fill="#919294"
+      />
+    </svg>
+    <div class="container">
+      <nav class="subMenu">
+        <div class="subMenu__column">
+          <h3 class="subMenu__title">О клинике второе</h3>
+
+          <div class="subMenu__group">
+            <h4 class="subMenu__subtitle">Пластика лица</h4>
+            <ul class="subMenu__list">
+              <li><a href="#">Блефаропластика</a></li>
+              <li><a href="#">Подтяжка лба</a></li>
+              <li><a href="#">Подтяжка лица</a></li>
+            </ul>
+          </div>
+
+          <div class="subMenu__group">
+            <h4 class="subMenu__subtitle">Пластика тела</h4>
+            <ul class="subMenu__list">
+              <li><a href="#">Липосакция</a></li>
+              <li><a href="#">Маммопластика</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="subMenu__column">
+          <h3 class="subMenu__title">Пластическая хирургия</h3>
+
+          <div class="subMenu__group">
+            <h4 class="subMenu__subtitle">Пластика лица</h4>
+            <ul class="subMenu__list">
+              <li><a href="#">Блефаропластика</a></li>
+              <li><a href="#">Подтяжка лба</a></li>
+              <li><a href="#">Подтяжка лица</a></li>
+            </ul>
+          </div>
+
+          <div class="subMenu__group">
+            <h4 class="subMenu__subtitle">Пластика тела</h4>
+            <ul class="subMenu__list">
+              <li><a href="#">Липосакция</a></li>
+              <li><a href="#">Маммопластика</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="subMenu__column">
+          <h3 class="subMenu__title">Пластическая хирургия</h3>
+
+          <div class="subMenu__group">
+            <h4 class="subMenu__subtitle">Пластика лица</h4>
+            <ul class="subMenu__list">
+              <li><a href="#">Блефаропластика</a></li>
+              <li><a href="#">Подтяжка лба</a></li>
+              <li><a href="#">Подтяжка лица</a></li>
+            </ul>
+          </div>
+
+          <div class="subMenu__group">
+            <h4 class="subMenu__subtitle">Пластика тела</h4>
+            <ul class="subMenu__list">
+              <li><a href="#">Липосакция</a></li>
+              <li><a href="#">Маммопластика</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="subMenu__column">
+          <h3 class="subMenu__title active">Пластическая хирургия</h3>
+
+          <div class="subMenu__group">
+            <h4 class="subMenu__subtitle active">Пластика лица</h4>
+            <ul class="subMenu__list">
+              <li class="active"><a href="#">Блефаропластика</a></li>
+              <li><a href="#">Подтяжка лба</a></li>
+              <li><a href="#">Подтяжка лица</a></li>
+            </ul>
+          </div>
+
+          <div class="subMenu__group">
+            <h4 class="subMenu__subtitle">Пластика тела</h4>
+            <ul class="subMenu__list">
+              <li><a href="#">Липосакция</a></li>
+              <li><a href="#">Маммопластика</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </div>
   </div>
 </header>
