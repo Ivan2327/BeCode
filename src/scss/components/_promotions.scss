@@ -1,12 +1,27 @@
 .promotions {
   margin: 80px 0;
 
+  @include small-tablet {
+    margin: 40px 0;
+  }
+
   &__title {
     margin-bottom: 55px;
     font-family: var(--font-family);
     font-weight: 300;
     font-size: 48px;
     color: #58595b;
+
+    @include small-tablet {
+      font-size: 28px;
+      margin-bottom: 15px;
+    }
+  }
+
+  &__tabs {
+    @include small-tablet {
+      display: none;
+    }
   }
 
   &__card {
@@ -16,6 +31,10 @@
     background-size: cover;
     background-repeat: no-repeat;
     padding: 35px 30px 30px 30px;
+
+    @include small-tablet {
+      padding: 30px 15px 35px 15px;
+    }
   }
 
   &__cardTitle {
@@ -26,8 +45,17 @@
     line-height: 140%;
     color: #ff802a;
 
+    @include small-tablet {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
     span {
       font-size: 60px;
+
+      @include small-tablet {
+        font-size: 44px;
+      }
     }
   }
 
@@ -38,5 +66,9 @@
     line-height: 140%;
     color: #58595b;
     max-width: 280px;
+
+    @include small-tablet {
+      font-size: 18px;
+    }
   }
 }

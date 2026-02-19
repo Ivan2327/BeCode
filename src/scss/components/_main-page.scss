@@ -5,6 +5,14 @@
   background-repeat: no-repeat;
   background-size: cover;
 
+  @include small-tablet {
+    margin-top: 140px;
+  }
+
+  @include mobile {
+    padding: 80px 0 60px 0;
+  }
+
   &__wrap {
     margin: 0 auto;
     width: 100%;
@@ -19,6 +27,10 @@
     line-height: 90%;
     text-align: center;
     color: #fff;
+
+    @include small-tablet {
+      font-size: 30px;
+    }
   }
 
   &__subtitle {
@@ -28,15 +40,27 @@
     line-height: 140%;
     text-align: center;
     color: #f3f3f3;
+
+    @include tablet {
+      display: none;
+    }
   }
 }
 
 .experience {
   margin: 60px 0 80px 0;
 
+  @include small-tablet {
+    margin: 25px 0;
+  }
+
   &__wrap {
     display: flex;
     gap: 25px;
+
+    @include small-tablet {
+      flex-direction: column;
+    }
   }
 
   &__text {
@@ -45,6 +69,10 @@
     gap: 10px;
     justify-content: space-between;
     width: calc(50% - 12.5px);
+
+    @include small-tablet {
+      width: 100%;
+    }
   }
 
   &__title {
@@ -54,6 +82,11 @@
     font-size: 48px;
     line-height: 140%;
     color: #58595b;
+
+    @include small-tablet {
+      margin-bottom: 15px;
+      font-size: 28px;
+    }
   }
 
   &__desc {
@@ -62,6 +95,10 @@
     font-size: 24px;
     line-height: 140%;
     color: #58595b;
+
+    @include small-tablet {
+      font-size: 19px;
+    }
   }
 
   &__border {
@@ -70,6 +107,10 @@
     width: 76px;
     height: 4px;
     background-color: #f63;
+
+    @include small-tablet {
+      display: none;
+    }
   }
 
   &__cards {
@@ -77,6 +118,10 @@
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
+
+    @include small-tablet {
+      width: 100%;
+    }
   }
 
   &__card {
@@ -84,6 +129,10 @@
     border-radius: 24px;
     background-color: #f3f3f3;
     padding: 30px 15px 40px 15px;
+
+    @include mobile {
+      padding: 20px 20px 30px 20px;
+    }
   }
 
   &__cardTitle {
@@ -104,36 +153,56 @@
     font-weight: 500;
     font-size: 20px;
     color: #58595b;
+
+    @include mobile {
+      font-size: 17px;
+    }
   }
 }
 
 .services {
   margin: 80px 0;
 
+  @include small-tablet {
+    margin: 25px 0 40px 0;
+  }
+
   &__wrap {
     display: flex;
-    flex-direction: column;
     gap: 30px;
+    @include small-tablet {
+      flex-direction: column;
+    }
   }
 
-  &__first {
+  &__line {
     display: flex;
+    flex-direction: column;
     gap: 20px;
-  }
+    flex: 1;
+    justify-content: space-between;
 
-  &__second {
-    display: flex;
-    gap: 20px;
+    @include small-tablet {
+      gap: 15px;
+    }
   }
 
   &__card {
-    width: calc((100% - 20px) / 3);
     display: flex;
     flex-direction: column;
     gap: 15px;
 
+    @include small-tablet {
+      flex-direction: unset;
+    }
+
     img {
       border-radius: 24px;
+
+      @include small-tablet {
+        aspect-ratio: 1/1 !important;
+        width: 29%;
+      }
     }
 
     h3 {
@@ -142,9 +211,18 @@
       gap: 8px;
       font-family: var(--font-family);
       font-weight: 600;
-      font-size: 24px;
+      font-size: 23px;
       line-height: 150%;
       color: #f63;
+
+      @include small-tablet {
+        gap: 0;
+        font-size: 20px;
+
+        svg {
+          display: none;
+        }
+      }
     }
 
     p {
@@ -153,6 +231,10 @@
       font-size: 16px;
       line-height: 140%;
       color: #58595b;
+
+      @include small-tablet {
+        display: none;
+      }
     }
   }
 
@@ -176,21 +258,27 @@
     aspect-ratio: 364/368;
   }
 
-  &__card--5 {
-    margin-top: -135px;
-  }
-
   &__card--6 img {
     aspect-ratio: 364/227;
   }
 }
 
 .about {
+  @include small-tablet {
+    background-color: #f3f3f3;
+    padding: 30px 0 40px 0;
+  }
+
   &__wrap {
     position: relative;
     padding: 50px 0 70px 0;
     background-color: #f3f3f3;
     z-index: 1;
+
+    @include small-tablet {
+      padding: 0;
+      margin-bottom: 30px;
+    }
 
     &::before,
     &::after {
@@ -215,6 +303,11 @@
   &__top {
     display: flex;
     gap: 50px;
+
+    @include tablet {
+      flex-direction: column;
+      gap: 5px;
+    }
   }
 
   &__left {
@@ -222,6 +315,10 @@
     flex-direction: column;
     gap: 60px;
     width: calc(50% - 25px);
+
+    @include tablet {
+      width: 100%;
+    }
   }
 
   &__title {
@@ -230,6 +327,11 @@
     font-weight: 300;
     font-size: 48px;
     color: #58595b;
+
+    @include small-tablet {
+      margin-bottom: 15px;
+      font-size: 28px;
+    }
   }
 
   &__subtitle {
@@ -238,6 +340,10 @@
     font-size: 24px;
     line-height: 140%;
     color: #58595b;
+
+    @include small-tablet {
+      font-size: 19px;
+    }
   }
 
   &__desc {
@@ -247,6 +353,14 @@
     line-height: 140%;
     color: #58595b;
     width: calc(50% - 25px);
+
+    @include tablet {
+      width: 100%;
+    }
+
+    @include small-tablet {
+      font-size: 17px;
+    }
   }
 
   &__border {
@@ -254,6 +368,10 @@
     width: 76px;
     height: 4px;
     background-color: #f63;
+
+    @include tablet {
+      display: none;
+    }
   }
 
   &__bottom {
@@ -263,11 +381,24 @@
     z-index: 2;
     margin-top: -50px;
     align-items: flex-end;
+
+    @include tablet {
+      flex-direction: column;
+      margin: 0;
+    }
+
+    @include tablet {
+      gap: 30px;
+    }
   }
 
   &__video {
     position: relative;
     width: calc(50% - 25px);
+
+    @include tablet {
+      width: 100%;
+    }
   }
 
   &__videoPlay {
@@ -279,8 +410,17 @@
     transform: translate(-50%, -50%);
   }
 
+  &__videoСover {
+    @include tablet {
+      width: 100%;
+    }
+  }
+
   &__list {
     width: calc(50% - 25px);
+    @include tablet {
+      width: 100%;
+    }
   }
 
   &__listUl {
@@ -297,6 +437,10 @@
       font-weight: 500;
       font-size: 16px;
       color: #58595b;
+
+      @include tablet {
+        font-size: 17px;
+      }
     }
   }
 
@@ -322,11 +466,22 @@
     font-size: 16px;
     color: #fff;
     transition: 0.3s all ease;
+
+    @include tablet {
+      display: block;
+      margin: 0 auto;
+      width: 80%;
+      max-width: 100%;
+    }
   }
 }
 
 .slogan {
   margin: 80px 0;
+
+  @include small-tablet {
+    margin: 60px 0 40px 0;
+  }
 
   &__wrap {
     border-radius: 24px;
@@ -334,6 +489,10 @@
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
+
+    @include small-tablet {
+      padding: 55px 20px 52px 20px;
+    }
   }
 
   &__title {
@@ -344,6 +503,11 @@
     font-size: 44px;
     color: #ffebe9;
     max-width: 420px;
+
+    @include small-tablet {
+      font-size: 28px;
+      margin-bottom: 55px;
+    }
 
     span {
       text-transform: uppercase;
@@ -364,12 +528,21 @@
 .results {
   margin: 80px 0 60px 0;
 
+  @include small-tablet {
+    margin: 40px 0 50px 0;
+  }
+
   &__title {
     margin-bottom: 32px;
     font-family: var(--font-family);
     font-weight: 300;
     font-size: 48px;
     color: #58595b;
+
+    @include small-tablet {
+      font-size: 28px;
+      margin-bottom: 15px;
+    }
   }
 
   &__subtitle {
@@ -379,6 +552,11 @@
     font-size: 24px;
     line-height: 140%;
     color: #58595b;
+
+    @include small-tablet {
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
   }
 
   &__border {
@@ -386,6 +564,10 @@
     width: 76px;
     height: 4px;
     background-color: #f63;
+
+    @include small-tablet {
+      display: none;
+    }
   }
 
   &__cards {
@@ -393,6 +575,10 @@
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
+
+    @include small-tablet {
+      margin: 0 0 20px 0;
+    }
   }
 
   &__card {
@@ -400,6 +586,10 @@
     border: 1px solid #d9dce2;
     border-radius: 24px;
     padding: 18px 24px 24px 24px;
+
+    @include small-tablet {
+      width: 100%;
+    }
   }
 
   &__cardTitle {
@@ -481,4 +671,55 @@
   height: 1px;
   border: none;
   background-color: #d9d9d9;
+
+  @include small-tablet {
+    display: none;
+  }
+}
+
+.cookie {
+  border: 1px solid #d2d2d2;
+  background-color: #e3e3e3;
+  position: fixed;
+  padding: 10px 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.3s ease;
+  display: none;
+
+  &.active {
+    visibility: visible;
+    opacity: 1;
+    display: flex;
+  }
+
+  &__wrap {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: space-between;
+  }
+
+  &__btn {
+    padding: 8px 18px;
+    border-radius: 24px;
+    background-color: #ff815a;
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 16px;
+    color: #fff;
+  }
+
+  p {
+    max-width: 660px;
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 120%;
+    color: #58595b;
+  }
 }

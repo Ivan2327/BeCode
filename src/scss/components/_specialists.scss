@@ -1,17 +1,36 @@
 .specialists {
   margin: 60px 0 70px 0;
 
+  @include small-tablet {
+    margin: 40px 0;
+  }
+
   &__title {
     margin-bottom: 50px;
     font-family: var(--font-family);
     font-weight: 300;
     font-size: 48px;
     color: #58595b;
+
+    @include small-tablet {
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+  }
+
+  &__tabs {
+    @include small-tablet {
+      display: none;
+    }
   }
 
   &__card img {
     aspect-ratio: 254/324;
     margin-bottom: 16px;
+
+    @include small-tablet {
+      width: 100%;
+    }
   }
 
   &__cardName {
@@ -21,6 +40,10 @@
     font-size: 20px;
     line-height: 130%;
     color: #ff802a;
+
+    @include small-tablet {
+      font-size: 19px;
+    }
 
     span {
       font-weight: 700;

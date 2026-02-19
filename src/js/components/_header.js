@@ -89,3 +89,9 @@ document.addEventListener("click", (e) => {
     searchBtn.classList.remove("active");
   }
 });
+
+const burgerBtn = document.querySelector(".header__burger");
+
+burgerBtn.addEventListener("click", () => {
+  burgerBtn.classList.toggle("active");
+});

@@ -1,9 +1,18 @@
 .quest {
   margin: 60px 0 75px 0;
 
+  @include small-tablet {
+    margin: 40px 0;
+  }
+
   &__wrap {
     display: flex;
     gap: 60px;
+
+    @include small-tablet {
+      flex-direction: column;
+      gap: 45px;
+    }
   }
 
   &__info {
@@ -12,6 +21,11 @@
     gap: 20px;
     justify-content: space-between;
     width: calc(50% - 30px);
+
+    @include small-tablet {
+      width: 100%;
+      gap: 30px;
+    }
   }
 
   &__title {
@@ -20,6 +34,11 @@
     font-weight: 300;
     font-size: 48px;
     color: #58595b;
+
+    @include small-tablet {
+      font-size: 28px;
+      margin-bottom: 15px;
+    }
   }
 
   &__subtitle {
@@ -28,6 +47,10 @@
     font-size: 18px;
     line-height: 140%;
     color: #58595b;
+
+    @include small-tablet {
+      font-size: 18px;
+    }
   }
 
   &__phone {
@@ -65,6 +88,11 @@
     padding: 60px 45px 50px 50px;
     border-radius: 24px;
     background-color: #f3f3f3;
+
+    @include small-tablet {
+      width: 100%;
+      padding: 30px 25px 40px 30px;
+    }
   }
 
   &__formTitle {
@@ -73,6 +101,11 @@
     font-weight: 500;
     font-size: 32px;
     color: #58595b;
+
+    @include small-tablet {
+      font-size: 24px;
+      margin-bottom: 25px;
+    }
   }
 
   &__formInputs {

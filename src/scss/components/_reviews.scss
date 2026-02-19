@@ -7,10 +7,19 @@
     font-weight: 300;
     font-size: 48px;
     color: #58595b;
+
+    @include small-tablet {
+      font-size: 28px;
+      margin-bottom: 30px;
+    }
   }
 
   &__tabs {
     margin-bottom: 50px;
+
+    @include small-tablet {
+      display: none;
+    }
   }
 
   &__card {
@@ -114,5 +123,12 @@
     font-size: 16px;
     color: #f63;
     transition: 0.3s all ease;
+
+    @include small-tablet {
+      width: 80%;
+      display: block;
+      margin: 0 auto;
+      max-width: 100%;
+    }
   }
 }

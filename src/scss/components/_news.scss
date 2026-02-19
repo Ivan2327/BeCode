@@ -1,18 +1,21 @@
 .news {
   margin: 80px 0;
 
+  @include small-tablet {
+    margin: 50px 0 40px 0;
+  }
+
   &__title {
     margin-bottom: 32px;
     font-family: var(--font-family);
     font-weight: 300;
     font-size: 48px;
     color: #58595b;
-  }
 
-  &__cards {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 60px 20px;
+    @include small-tablet {
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
   }
 
   &__card {
@@ -21,6 +24,11 @@
     img {
       border-radius: 24px;
       aspect-ratio: 364/256;
+      margin-bottom: 20px;
+
+      @include mobile {
+        margin-bottom: 15px;
+      }
     }
   }
 
@@ -31,6 +39,10 @@
     font-size: 18px;
     line-height: 150%;
     color: #58595b;
+
+    @include mobile {
+      display: none;
+    }
   }
 
   &__cardPreview {
@@ -39,6 +51,10 @@
     font-size: 18px;
     line-height: 140%;
     color: #58595b;
+
+    @include mobile {
+      font-size: 16px;
+    }
 
     span {
       font-weight: 700;
@@ -57,5 +73,12 @@
     font-weight: 600;
     font-size: 16px;
     color: #f63;
+
+    @include small-tablet {
+      display: block;
+      width: 80%;
+      margin: 20px auto 0 auto;
+      text-align: center;
+    }
   }
 }
