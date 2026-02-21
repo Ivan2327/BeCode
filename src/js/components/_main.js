@@ -233,6 +233,17 @@ const newsSwiper = new Swiper(".news__swiper", {
   },
 });
 
+const magazineSwiper = new Swiper(".magazine__swiper", {
+  slidesPerView: 3,
+  spaceBetween: 20,
+  speed: 600,
+  breakpoints: {
+    0: { slidesPerView: 2, spaceBetween: 15 },
+    768: { slidesPerView: 3 },
+    1024: { slidesPerView: 4 },
+  },
+});
+
 const cookie = document.querySelector(".cookie");
 const cookieBtn = document.querySelector(".cookie__btn");
 
